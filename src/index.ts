@@ -1,11 +1,9 @@
-import { User } from './models/User';
+import { Collection } from './models/Collection';
+import { User, UserProps } from './models/User';
 
-const user = User.buildUser({ id: 1, name: 'Apurva', age: 20 });
+// const collection = User.buildUserCollection();
 
-// console.log(user.get('name'));
-
-user.on('change', () => {
-  console.log(user);
-});
-
-user.fetch();
+// collection.on('change', () => {
+//   console.log(collection);
+// });
+// collection.fetch();
